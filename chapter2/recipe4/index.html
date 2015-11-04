@@ -4,10 +4,13 @@
     <script src="js/app.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
   </head>
-  <body ng-app>
+  <body ng-app="nameApp" style="padding: 20px">
     <div ng-controller="MyCtrl">
-      <input type="text" ng-model="name" placeholder="Enter your name">
+      <input type="text" ng-model="name" placeholder="Enter your name" style="height: 2em">
       <p>{{greeting}}</p>
+      <div paster="name" style="border: 2px solid red">
+        You pasted something
+      </div>
     </div>
   </body>
 </html>
